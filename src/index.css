@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  margin-left: 100px;
+  display: flex;
+  max-width: 100vw;
+  min-height: 100vh;
+  place-content: center;
+  background-image: repeating-linear-gradient(rgb(84, 129, 84));
+}
+p.heading {
+  font-size: larger;
+  justify-content: center;
+  align-content: center;
+  width: 600px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-weight: 600;
+  line-height: 1.1;
+  color: rgb(217, 39, 113);
+  place-self: center;
+}
+h3 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  color: rgb(217, 39, 113);
+  place-self: center;
+  font-style: italic;
+}
+#promptTxtArea {
+  display: flex;
+  width: 300px;
+  height: 100px;
+  padding: 30px;
+  font-style: Times;
+  align-items: center;
+  place-content: top;
+  font-size: 14px;
+  margin-top: 20px;
+  border-radius: 3px;
+  border-color: black;
+}
+#promptTxtArea:hover {
+  border-color: red;
+  border-radius: 3px;
+  border: 4px solid red;
+  transition: width 4s height 4s;
+  transition-delay: 1s;
+  transition-timing-function: ease-out;
+  width: 600px;
+  height: 200px;
+}
+#promptLbl {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.gen-btn,
+.save-btn,
+.download-btn {
+  display: flex;
+  border-radius: 8px;
+  width: 8em;
+  height: 3em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: rgb(217, 39, 113);
+}
+.download-btn {
+  background-color: rgb(31, 176, 166);
+}
+.clear-btn {
+  display: inline;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  width: 8em;
+  height: 3em;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  background-color: rgb(217, 39, 113);
+}
+.clear-btn:hover,
+.gen-btn:hover,
+.save-btn:hover,
+.download-btn:hover,
+.clipB-btn:hover {
+  transition: width 2s;
+  width: 10em;
+  background-color: rgb(108, 93, 9);
+}
+
+.response {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 20px, 20px;
+  border: 2px solid #c36222;
+}
+.genRes {
+  max-width: 800px;
+  max-height: max-content;
+  place-content: center;
+  margin-bottom: 10px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.clipB-btn {
+  display: inline;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  background-color: rgb(31, 176, 166);
+  width: 8em;
+  padding: 30px, 30px;
+}
