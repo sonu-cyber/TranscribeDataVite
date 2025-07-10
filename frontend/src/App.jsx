@@ -45,7 +45,7 @@ function App() {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/api/save-response", {
+      const response = await fetch("https://transcribedatavite.onrender.com/api/save-response", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -83,7 +83,7 @@ function App() {
     setError("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/generate-text", {
+      const response = await fetch("https://transcribedatavite.onrender.com/api/generate-text", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

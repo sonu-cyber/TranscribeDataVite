@@ -12,7 +12,14 @@ dotenv.config();
 const PORT = 5000;
 const apiKey = process.env.VITE_GEMINI_API_KEY;
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "https://transcribedatavite.onrender.com",
+      "https://transcribedatavite.netlify.app",
+    ],
+  })
+);
 app.use(
   express.json({
     // allow large text uploads
@@ -28,7 +35,7 @@ app.use(
 );
 
 //Set server timeout
-const server = app.listen(3000, () => {
+const server = app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
 server.timeout = 300000; //5 minutes
